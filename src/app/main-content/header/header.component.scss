@@ -1,0 +1,130 @@
+@import './../../../styles.scss';
+
+
+nav {
+    height: 100px;
+    @include dFlex($jc: space-between);
+    padding: 37px 116px 37px 90px;
+    position: sticky;
+    top: 0;
+    background-color: #141d2f;
+    z-index: 99;
+
+    a {
+        @include dFlex;
+
+        img {
+            width: 150px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+.language-btn {
+    @include dFlex;
+
+    button {
+        border: 0;
+        background-color: transparent;
+        color: whitesmoke;
+        font-family: 'Poppins';
+        font-size: 23px;
+        
+        &:hover {
+            cursor: pointer;
+            color: $orange;
+            transition: 125ms;
+        }
+    }
+}
+
+
+div {
+    @include dFlex($g: 40px);
+    font-size: 23px;
+
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding-bottom: 4px;
+
+        &:hover {
+            cursor: pointer;
+            color: $orange;
+            transition: 125ms;
+        }
+    }
+}
+
+.smallUnderline {
+    height: 3px;
+    background-color: $pink;
+    width: 56px;
+    border-radius: 4px;
+    margin-top: -3px;
+}
+
+
+.mobile-display {
+
+    a {
+        display: none;
+        width: 30px !important;
+        cursor: pointer;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+    nav {
+        padding: 37px 88px 37px 64px;
+    }
+
+    .desktop-display {
+        display: none !important;
+    }
+
+    .mobile-display {
+
+        a {
+            display: flex !important;
+
+        }
+
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 37px 80px 37px 56px;
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        padding: 37px 64px 37px 40px;
+
+        a {
+            img {
+                width: 140px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 350px) {
+    nav {
+        a {
+            img {
+                width: 124px;
+            }
+        }
+
+    }
+}

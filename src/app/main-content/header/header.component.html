@@ -1,0 +1,31 @@
+<nav>
+    <a href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
+    <div class="mobile-display">
+        <a href="#"><img (click)="openMenu()" href="#" src="./../../assets/img/icons/burger.png" alt="Menu"></a>
+    </div>
+    <div class="desktop-display">
+
+        <section>
+            <a href="#bout-me" (click)="setAboutMeOpen()">About me</a>
+            <div *ngIf="aboutMeOpen" [ngClass]="{'smallUnderline':aboutMeOpen}" ></div>
+        </section>
+
+        <section>
+            <a href="#skills" (click)="setSkillsOpen()">Skills</a>
+            <div *ngIf="skillsOpen" [ngClass]="{'smallUnderline':skillsOpen}" ></div>
+        </section>
+    
+        <section>
+            <a href="#portfolio" (click)="setPortfolioOpen()">Portfolio</a>
+            <div *ngIf="portfolioOpen" [ngClass]="{'smallUnderline':portfolioOpen}" ></div>
+        </section>
+        
+        <section class="language-btn">
+            <button href="">EN</button>
+            <p>|</p>
+            <button href="">DE</button>
+        </section>
+    </div>
+</nav>
+
+

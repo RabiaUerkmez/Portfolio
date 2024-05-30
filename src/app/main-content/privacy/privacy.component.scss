@@ -1,0 +1,34 @@
+@import './../../../styles.scss';
+
+.main-content {
+    padding: 100px;
+
+    .fix-btn {
+        @include dFlex($jc: space-between);
+
+        a {
+
+            img {
+                rotate: 270deg;
+                width: 40px;
+
+                &:hover {
+                    filter: invert(49%) sepia(36%) saturate(4252%) hue-rotate(5deg) brightness(103%) contrast(99%);
+                }
+            }
+
+        }
+    }
+
+    a {
+        color: $pink;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    p {
+        letter-spacing: 0.1px;
+    }
+}

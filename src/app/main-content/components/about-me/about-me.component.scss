@@ -1,0 +1,145 @@
+@import './../../../../styles.scss';
+
+.shade {
+    position: absolute;
+    right: -30px;
+    margin-top: -160px;
+    z-index: -1;
+}
+
+.main-section {
+    @include dFlex($jc: space-between);
+    padding: 160px 0 160px 180px;
+    width: 100vw;
+    max-width: 1920px;
+}
+
+.left-section {
+    @include dFlex($ai: start, $g: 35px);
+    flex-direction: column;
+
+    .text-section {
+        width: 480px;
+        @include dFlex($g: 35px);
+        flex-direction: column;
+    }
+
+    span {
+        text-align: start;
+    }
+}
+
+.personal-section {
+    @include dFlex($ai: start, $g: 35px);
+
+    img {
+        transition: transform 125ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+h2 {
+    font-size: 90px;
+    margin: 0;
+}
+
+.right-section {
+    @include dFlex;
+
+    .cycleImg {
+        max-width: 453px;
+        width: 453px;
+        max-height: 453px;
+        height: 453px;
+        border: 3px solid $orange;
+        border-radius: 50%;
+        background-image: url(./../../../../assets/img/small-me.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scaleX(-1);
+        // background-color: #2a354b;
+    }
+
+}
+
+.empty-line {
+    flex: 1;
+}
+
+.orange-line {
+    min-width: 260px;
+    height: 3px;
+    background-color: $orange;
+    flex: 1;
+}
+
+
+@media (max-width: 1300px) {
+    .main-section {
+        padding-left: 140px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .right-section, .orange-line {
+        display: none;
+    }
+
+
+    .main-section {
+        padding: 160px 0 160px 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .left-section {
+        h2 {
+            font-size: 80px;
+        }
+
+        .text-section {
+            width: 350px;
+
+            span {
+                font-size: 14px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    h2 {
+        font-size: 64px !important;
+    }
+}
+
+@media (max-width: 380px) {
+
+    h2 {
+        font-size: 48px !important;
+    }
+
+    .text-section {
+        width: 280px !important;
+
+    }
+}
+
+@media (max-width: 340px) {
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    .text-section {
+        width: 250px !important;
+
+    }
+}

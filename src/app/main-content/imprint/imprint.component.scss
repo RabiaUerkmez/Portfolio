@@ -1,0 +1,43 @@
+@import './../../../styles.scss';
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.fix-btn {
+    @include dFlex($ai: end);
+    flex-direction: column;
+    padding: 100px;
+    a {
+        img {
+            rotate: 270deg;
+            width: 40px;
+
+            &:hover {
+                filter: invert(49%) sepia(36%) saturate(4252%) hue-rotate(5deg) brightness(103%) contrast(99%);
+            }
+        }
+
+    }
+}
+
+.main-content {
+    
+
+    p {
+        font-size: 24px;
+        letter-spacing: 0.1px;
+
+        a{
+            color: $pink;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<div class="main-content">
+    <div class="headline-content" data-aos="fade-left">
+        <div class="headline">
+            <div class="left-section">
+                <div class="empty"></div>
+                <div class="short-line"></div>
+            </div>
+            <h2>Portfolio</h2>
+            <div class="right-section">
+                <div class="long-line"></div>
+            </div>
+        </div>
+        <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+    </div>
+    
+    <div class="content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        *ngFor="let project of projects; let i = index"
+        [ngStyle]="{
+            'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse'
+          }">
+    
+        <img [src]="'./assets/img/' + project['img']" [alt]="project['name']">
+    
+        <div class="right-content" [ngStyle]="{
+            'align-items': i % 2 === 0 ? 'start' : 'end'
+          }">
+            <div class="text-section" [ngStyle]="{
+                'align-items': i % 2 === 0 ? 'start' : 'end'
+              }">
+                <h2>{{ project['name'] }}</h2>
+                <h3>{{ project['tech'] }}</h3>
+                <span [ngStyle]="{
+                    'text-align': i % 2 === 0 ? 'start' : 'end'
+                  }">{{ project['description'] }}</span>
+    
+            </div>
+            <div class="btns">
+                <a href="{{ project['link'] }}" class="live">Live test</a>
+                <a href="{{ project['git'] }}" class="git">Github</a>
+            </div>
+        </div>
+    </div>
+    
+</div>

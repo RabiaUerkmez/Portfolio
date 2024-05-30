@@ -1,0 +1,126 @@
+@import './../../../styles.scss';
+
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(20, 29, 47, 0.663);
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    nav {
+        height: 100px;
+        @include dFlex($jc: space-between);
+        padding: 37px 116px 37px 90px;
+        position: sticky;
+        top: 0;
+        background-color: #141d2f;
+        z-index: 99;
+
+        a {
+            @include dFlex;
+
+            img {
+                width: 150px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .style-close-btn {
+        width: 30px !important;
+        cursor: pointer;
+    }
+
+    #mobile-burger {
+        @include dFlex($g: 40px);
+        flex-direction: column;
+        height: 50vh;
+        z-index: 9;
+        font-size: 23px;
+
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                color: $orange;
+                transition: 125ms;
+            }
+        }
+    }
+}
+
+.hover {
+    height: 24px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 23px;
+    text-wrap: nowrap;
+
+    &:hover {
+        transition: ease-in-out 200ms;
+        color: $orange;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 4px;
+            width: 40px;
+            background: $pink;
+            transition: ease-in-out 200ms;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .bg {
+        nav {
+            padding: 37px 88px 37px 64px;
+        }
+    }
+
+}
+
+@media (max-width: 700px) {
+    .bg {
+        nav {
+            padding: 37px 80px 37px 56px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    nav {
+        padding: 37px 64px 37px 40px !important;
+
+        a {
+            img {
+                width: 140px !important;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 350px) {
+    nav {
+        a {
+            img {
+                width: 124px !important;
+            }
+        }
+
+    }
+}

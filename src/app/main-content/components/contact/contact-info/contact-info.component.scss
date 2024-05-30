@@ -1,0 +1,311 @@
+@import './../../../../../styles.scss';
+
+.main-content {
+    @include dFlex($ai: start, $g: 80px);
+    padding: 100px;
+}
+
+.text-section {
+    @include dFlex($ai: start, $g: 40px);
+    flex-direction: column;
+
+    h4 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+}
+
+form {
+    @include dFlex($g: 40px);
+    flex-direction: column;
+
+
+
+    span {
+        font-size: 14px;
+    }
+
+    .ai-start {
+        @include dFlex($ai: start, $g: 12px);
+        flex-direction: column;
+    }
+
+    .required {
+        @include dFlex($ai: start, $g: 8px);
+        flex-direction: column;
+        position: relative;
+
+        label {
+            position: absolute;
+            top: 14px;
+            right: 20px;
+        }
+    }
+
+    input:-webkit-autofill {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: whitesmoke !important;
+      }
+
+    input[type=submit] {
+        @include dFlex;
+        width: 253px;
+        height: 58px;
+        padding: 15px 30px 15px 30px;
+        border-radius: 10px;
+        border: 0;
+        font-size: 28px;
+        box-shadow: 4px 4px 4px 0px #00000040;
+        background-color: $orange;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    input[type=submit]:disabled {
+        background-color: #B6B6B6 !important;
+        cursor: unset !important;
+    }
+
+    input[type=name],
+    [type=email] {
+        width: 617px;
+        border-radius: 10px;
+        border: 1px solid $pink;
+        font-size: 16px;
+        padding: 15px 25px 15px 25px;
+        background-color: transparent;
+        font-family: 'Poppins';
+        background: none;
+        outline: none;
+        color: whitesmoke;
+
+        &:focus,
+        &:hover {
+            border: 1px solid $orange;
+        }
+
+        &::placeholder {
+            color: whitesmoke !important;
+        }
+    }
+
+    textarea {
+        width: 617px;
+        height: 200px;
+        border-radius: 10px;
+        border: 1px solid #ff4747;
+        padding: 15px 25px 15px 25px;
+        font-size: 16px;
+        background-color: transparent;
+        font-family: 'Poppins';
+        color: whitesmoke;
+        outline: none;
+        font-style: unset;
+        resize: vertical;
+
+        &:focus,
+        &:hover {
+            border: 1px solid $orange;
+        }
+
+        &::placeholder {
+            color: whitesmoke !important;
+        }
+
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: transparent;
+        border-radius: 2px;
+        border: 1px solid $orange;
+        min-width: 20px;
+        height: 20px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]:checked {
+        border-color: $orange;
+    }
+
+    input[type="checkbox"]:checked::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 12px;
+        border: solid #fa7902;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        position: relative;
+        top: -1px;
+        left: 5px;
+    }
+}
+
+.error {
+    border-color: #E61C40 !important;
+}
+
+.success {
+    border-color: #70E61C !important;
+}
+
+.policy-box {
+    @include dFlex($g: 8px);
+    height: 27px;
+
+    .checkbox {
+        width: 26px;
+        height: 26px;
+
+        &:hover {
+            border-radius: 100%;
+            background-color: #183771;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        color: $pink;
+        text-decoration: none;
+
+        &:hover {
+            color: $pink;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+.fix-btn {
+    @include dFlex($ai: end);
+    flex-direction: column;
+
+    .go-up-btn {
+        @include dFlex;
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            filter: invert(49%) sepia(36%) saturate(4252%) hue-rotate(5deg) brightness(103%) contrast(99%);
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 100px;
+    }
+}
+
+@media (max-width: 750px) {
+    .main-content {
+        padding: 40px 48px;
+    }
+
+    form {
+
+        input[type=name],
+        [type=email] {
+            width: 75vw;
+        }
+
+        textarea {
+            width: 75vw;
+        }
+    }
+
+}
+
+@media (max-width: 708px) {
+    .policy-box {
+        padding-top: 8px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main-content {
+        padding: 40px 32px;
+    }
+
+    .text-section {
+        h4 {
+            font-size: 26px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .ai-start {
+        align-items: center;
+    }
+
+    form {
+
+        input[type=name],
+        [type=email] {
+            width: 70vw;
+        }
+
+        textarea {
+            width: 70vw;
+        }
+    }
+
+    .required {
+        width: 80vw;
+        gap: 16px !important;
+
+        // span {
+        //     font-size: 14px;
+        // }
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    form {
+
+        input[type=name],
+        [type=email] {
+            width: 65vw;
+        }
+
+        textarea {
+            width: 65vw;
+        }
+
+        input[type=submit] {
+            width: 196px;
+            height: 48px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (max-width: 396px) {
+
+    .policy-box {
+        padding: 16px 0 8px 0;
+    }
+}
+
+// @media (max-width: 340px) {
+
+//     h2 {
+//         font-size: 40px !important;
+//     }
+// }
