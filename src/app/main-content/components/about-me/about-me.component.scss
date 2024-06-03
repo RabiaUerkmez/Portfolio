@@ -9,7 +9,7 @@
 
 .main-section {
     @include dFlex($jc: space-between);
-    padding: 160px 0 160px 180px;
+    padding: 160px 0 160px 100px;
     width: 100vw;
     max-width: 1920px;
 }
