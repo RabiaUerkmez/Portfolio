@@ -158,17 +158,31 @@ span {
             text-align: center !important;
         }
     }
+
+    .right {
+        width: 480px;
+    }
 }
 
 @media (max-width: 900px) {
     .headline {
         gap: 48px;
     }
+
+    .right {
+        width: 400px;
+        bottom: 80px;
+    }
 }
 
 @media (max-width: 800px) {
     .headline {
         gap: 40px;
+    }
+
+    .right {
+        width: 320px;
+        bottom: 160px;
     }
 }
 
@@ -209,6 +223,10 @@ span {
 
     span {
         font-size: 14px !important;
+    }
+
+    .right {
+        width: 240px;
     }
 }
 
@@ -252,6 +270,11 @@ span {
 @media (max-width: 350px) {
     img {
         width: 200px;
+    }
+
+    .right {
+        width: 160px;
+        bottom: 240px;
     }
 }
 

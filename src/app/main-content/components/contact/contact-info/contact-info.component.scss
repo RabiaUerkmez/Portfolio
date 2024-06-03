@@ -327,6 +327,10 @@ form {
         padding-top: 16px !important;
         width: 80vw !important;
     }
+
+    .shade {
+        width: 240px;
+    }
 }
 
 
@@ -352,6 +356,9 @@ form {
         padding-top: 24px !important;
     }
 
+    .shade {
+        width: 160px;
+    }
 }
 
 @media (max-width: 396px) {

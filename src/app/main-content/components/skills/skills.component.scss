@@ -13,6 +13,10 @@
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 .left-section {
     @include dFlex($jc: start, $ai: start, $g: 100px);
     flex-wrap: wrap;
@@ -136,15 +140,16 @@ button {
 .shade {
     position: absolute;
     left: 0;
+    z-index: -99;
 }
 
 
 @media (max-width: 1200px) {
     .main-section {
-        padding: 160px 0;
+        padding: 0;
         flex-direction: column-reverse;
         @include dFlex($jc: space-around, $g: 160px);
-        // height: 50vh;
+
 
         .desktop-btn {
             display: none;
@@ -201,6 +206,10 @@ button {
             padding-right: 0;
         }
     }
+
+    .shade {
+        width: 320px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -256,6 +265,9 @@ button {
         }
     }
 
+    .shade {
+        width: 240px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -286,6 +298,9 @@ button {
         }
     }
 
+    .shade {
+        width: 180px;
+    }
 }
 
 @media (max-width: 340px) {
