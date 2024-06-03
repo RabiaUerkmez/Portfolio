@@ -1,7 +1,18 @@
 @import './../../../../styles.scss';
 
 .main-content {
-    padding: 200px 0;
+    padding: 200px 0 0 0;
+    position: relative;
+}
+
+.shade {
+    position: absolute;
+    z-index: -99;
+}
+
+.right {
+    right: 0;
+    bottom: 0;
 }
 
 .headline-content {
@@ -17,7 +28,6 @@
 }
 
 .headline {
-
     @include dFlex($g: 80px);
     width: 100vw;
 

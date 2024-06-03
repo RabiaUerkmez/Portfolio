@@ -7,14 +7,14 @@
     
         <div class="right-section">
             <div>
-                <h3>I am</h3>
+                <h3 [ngClass]="{'styleHeaderGerman': languageService.german}">{{ "landing.iAm" | translate }}</h3>
     
                 <div class="title">
                     <h1>Rabia Ürkmez</h1>
-                    <h2>FRONTEND DEVELOPER</h2>
+                    <h2>{{ "landing.title" | translate }}</h2>
                 </div>
             </div>
-            <a href="#contact"><button>Let's talk!</button></a>
+            <a href="#contact"><button>{{ "landing.talk" | translate }}</button></a>
         </div>
     
     </div>

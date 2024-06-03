@@ -1,0 +1,69 @@
+@import './../styles.scss';
+
+
+
+app-header {
+    width: 100vw;
+    position: sticky;
+    display: block;
+    top: 0;
+    z-index: 9;
+}
+
+.burger_open {
+    display: none;
+}
+
+.burger_closed{
+    display: none;
+    
+}
+
+
+@media (max-width: 850px) {
+    .burger_open{
+        display: block;
+        animation: dialogOpen 250ms forwards;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(20, 29, 47, 0.663);
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+    
+    .burger_closed{
+        animation: dialogClose 250ms forwards;
+        
+    }
+    
+    @keyframes dialogOpen {
+        from{
+            opacity: 0;
+            z-index: 0;
+        }
+        to{
+            opacity: 1;
+            z-index: 99;
+        }
+    }
+    
+    
+    @keyframes dialogClose {
+        from{
+            opacity: 1;
+            z-index: 99;
+            display: block;
+        }
+        to{
+            opacity: 0;
+            z-index: 0;
+            display: none;
+        }
+        
+    }
+}

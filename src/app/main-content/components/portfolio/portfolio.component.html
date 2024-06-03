@@ -10,17 +10,17 @@
                 <div class="long-line"></div>
             </div>
         </div>
-        <span>Explore a selection of my work here - Interact with projects to see my skills in action.</span>
+        <span>{{ "portfolio.title" | translate }}</span>
     </div>
-    
+    <img class="shade" [ngStyle]="{ 'left': '0' }" src="./assets/img/shades/portleft.png">
+
     <div class="content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out"
-        *ngFor="let project of projects; let i = index"
-        [ngStyle]="{
+        *ngFor="let project of projects; let i = index" [ngStyle]="{
             'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse'
           }">
-    
+
         <img [src]="'./assets/img/' + project['img']" [alt]="project['name']">
-    
+
         <div class="right-content" [ngStyle]="{
             'align-items': i % 2 === 0 ? 'start' : 'end'
           }">
@@ -32,13 +32,14 @@
                 <span [ngStyle]="{
                     'text-align': i % 2 === 0 ? 'start' : 'end'
                   }">{{ project['description'] }}</span>
-    
+
             </div>
             <div class="btns">
                 <a href="{{ project['link'] }}" class="live">Live test</a>
                 <a href="{{ project['git'] }}" class="git">Github</a>
             </div>
+
         </div>
     </div>
-    
+    <img class="shade right" src="./assets/img/shades/portright.png">
 </div>

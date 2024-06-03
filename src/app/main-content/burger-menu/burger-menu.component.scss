@@ -56,9 +56,24 @@
                 color: $orange;
                 transition: 125ms;
             }
+
+        }
+
+        
+        div {
+            @include dFlex($g: 4px);
         }
     }
 }
+
+.orange {
+    color: $orange !important;
+    text-decoration: underline !important;
+    text-decoration-color: $pink !important;
+    text-decoration-thickness: 3px !important;
+}
+
+
 
 .hover {
     height: 24px;
@@ -84,7 +99,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .bg {
         nav {
             padding: 37px 88px 37px 64px;

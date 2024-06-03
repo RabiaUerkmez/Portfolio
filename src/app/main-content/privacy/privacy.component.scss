@@ -7,7 +7,6 @@
         @include dFlex($jc: space-between);
 
         a {
-
             img {
                 rotate: 270deg;
                 width: 40px;
@@ -16,7 +15,6 @@
                     filter: invert(49%) sepia(36%) saturate(4252%) hue-rotate(5deg) brightness(103%) contrast(99%);
                 }
             }
-
         }
     }
 
@@ -28,7 +26,88 @@
         }
     }
 
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+        letter-spacing: 0.15px;
+    }
+
     p {
         letter-spacing: 0.1px;
+    }
+}
+
+@media (max-width: 650px) {
+    .main-content {
+    
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .main-content {
+    
+        h1 {
+            font-size: 38px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .main-content {
+    
+        h1 {
+            font-size: 32px;
+        }
+    
+        h2 {
+            font-size: 24px;
+        }
+    
+        h3 {
+            font-size: 24px;
+        }
+    
+        h4 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .main-content {
+    
+        h1 {
+            font-size: 24px;
+        }
+    
+        h2 {
+            font-size: 18px;
+        }
+    
+        h3 {
+            font-size: 18px;
+        }
+    
+        h4 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 }

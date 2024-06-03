@@ -3,6 +3,7 @@
 .headline {
     @include dFlex($jc: start, $g: 16px);
     width: 100vw;
+    padding-top: 200px;
 
     .left-section,
     .right-section {

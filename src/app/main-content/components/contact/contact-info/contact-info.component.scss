@@ -2,12 +2,36 @@
 
 .main-content {
     @include dFlex($ai: start, $g: 80px);
-    padding: 100px;
+    padding: 100px 100px 200px 100px;
+    position: relative;
+}
+
+
+.shade {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -99;
+    width: 480px;
+}
+
+section {
+    @include dFlex;
+    box-shadow: 0px 0 24px 8px #141d2f inset;
+    background-color: rgb(75 81 93 / 57%);
+    width: 24vw;
+    height: 16vh;
+    border-radius: 24px;
+    position: absolute;
+    bottom: 50%;
+    color: whitesmoke;
+    font-size: 32px;
 }
 
 .text-section {
     @include dFlex($ai: start, $g: 40px);
     flex-direction: column;
+    width: 40%;
 
     h4 {
         margin: 0;
@@ -22,7 +46,6 @@
 form {
     @include dFlex($g: 40px);
     flex-direction: column;
-
 
 
     span {
@@ -49,12 +72,11 @@ form {
     input:-webkit-autofill {
         transition: background-color 5000s ease-in-out 0s;
         -webkit-text-fill-color: whitesmoke !important;
-      }
+    }
 
     input[type=submit] {
         @include dFlex;
-        width: 253px;
-        height: 58px;
+        font-family: 'Poppins', sans-serif;
         padding: 15px 30px 15px 30px;
         border-radius: 10px;
         border: 0;
@@ -66,7 +88,7 @@ form {
     }
 
     input[type=submit]:disabled {
-        background-color: #B6B6B6 !important;
+        background-color: #b6b6b657 !important;
         cursor: unset !important;
     }
 
@@ -184,6 +206,10 @@ form {
     }
 }
 
+.policyBoxGerman {
+    width: 620px !important;
+}
+
 .fix-btn {
     @include dFlex($ai: end);
     flex-direction: column;
@@ -204,6 +230,23 @@ form {
         flex-direction: column;
         align-items: center;
         padding: 40px 100px;
+
+        form {
+            padding-bottom: 56px;
+
+        }
+    }
+
+    .text-section {
+        width: 88%;
+    }
+
+    .fix-btn {
+        padding-bottom: 40px;
+    }
+
+    .shade {
+        width: 400px;
     }
 }
 
@@ -222,6 +265,18 @@ form {
         textarea {
             width: 75vw;
         }
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .policyBoxGerman {
+        width: 75vw !important;
+    }
+
+    .shade {
+        width: 320px;
     }
 
 }
@@ -266,10 +321,11 @@ form {
     .required {
         width: 80vw;
         gap: 16px !important;
+    }
 
-        // span {
-        //     font-size: 14px;
-        // }
+    .policyBoxGerman {
+        padding-top: 16px !important;
+        width: 80vw !important;
     }
 }
 
@@ -288,10 +344,12 @@ form {
         }
 
         input[type=submit] {
-            width: 196px;
-            height: 48px;
             font-size: 16px;
         }
+    }
+
+    .policyBoxGerman {
+        padding-top: 24px !important;
     }
 
 }
@@ -301,11 +359,9 @@ form {
     .policy-box {
         padding: 16px 0 8px 0;
     }
+
+
+    .policyBoxGerman {
+        padding-top: 40px 0 24px 0 !important;
+    }
 }
-
-// @media (max-width: 340px) {
-
-//     h2 {
-//         font-size: 40px !important;
-//     }
-// }

@@ -1,7 +1,8 @@
 <div class="center-max-width">
+
+    <div class="line"></div>
     <div class="space-between">
         <div class="link-section">
-            <div class="line"></div>
             <div class="just-links">
                 <a href="https://github.com/RabiaUerkmez" target="_blank"><img src="./assets/img/icons/github.png"
                         alt="Github Link"></a>
@@ -10,12 +11,12 @@
                         src="./assets/img/icons/linkedin.png" alt="LinkedIn Link"></a>
                 <a href="#contact">111rabiaurkmez&#64;gmail.com</a>
             </div>
-            <div class="empty"></div>
         </div>
 
-        <div class="scroll-section">
-            <span>Scroll down</span>
+        <div class="scroll-section" [ngClass]="{'scrollGerman': languageService.german}">
+            <span>{{ "scroll.scroll" | translate }}</span>
             <img src="./assets/img/icons/arrow-down.png" alt="Arrow down">
         </div>
     </div>
+    <div class="empty-line"></div>
 </div>

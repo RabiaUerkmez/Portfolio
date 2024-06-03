@@ -24,22 +24,22 @@ nav {
     }
 }
 
-.language-btn {
-    @include dFlex;
+.orange {
+    color: $orange !important;
+}
 
-    button {
-        border: 0;
-        background-color: transparent;
-        color: whitesmoke;
-        font-family: 'Poppins';
-        font-size: 23px;
-        
-        &:hover {
-            cursor: pointer;
-            color: $orange;
-            transition: 125ms;
+.language-btn {
+    @include dFlex($g: 4px);
+
+    .style-underline {
+        flex-direction: column;
+        gap: 0 !important;
+
+        .smallUnderline {
+            width: 24px !important;
         }
     }
+
 }
 
 
@@ -80,7 +80,7 @@ div {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     nav {
         padding: 37px 88px 37px 64px;
     }
