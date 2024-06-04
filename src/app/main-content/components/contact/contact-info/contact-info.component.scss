@@ -1,11 +1,14 @@
 @import './../../../../../styles.scss';
 
-.main-content {
-    @include dFlex($ai: start, $g: 80px);
-    padding: 100px 100px 200px 100px;
+.center-max-width {
+    @include dFlex;
     position: relative;
 }
 
+.main-content {
+    @include dFlex($jc: space-between, $ai: start, $g: 80px);
+    padding: 100px 100px 200px 100px;
+}
 
 .shade {
     position: absolute;

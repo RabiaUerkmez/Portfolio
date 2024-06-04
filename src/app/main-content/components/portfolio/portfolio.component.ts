@@ -17,8 +17,8 @@ export class PortfolioComponent {
             name: 'Join',
             tech: 'HTML | CSS | Javascript',
             description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-            link: ' ',
-            github: ' ',
+            link: 'https://join.rabia-uerkmez.de/html/user-login/log-in.html',
+            github: 'https://github.com/RabiaUerkmez/Join',
             img: 'join.png',
         },
         {

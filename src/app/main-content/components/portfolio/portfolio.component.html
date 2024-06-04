@@ -14,12 +14,13 @@
     </div>
     <img class="shade" [ngStyle]="{ 'left': '0' }" src="./assets/img/shades/portleft.png">
 
-    <div class="content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out"
+    <div  [ngStyle]="{ 'padding-top': '160px' }">
+        <div class="content" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out"
         *ngFor="let project of projects; let i = index" [ngStyle]="{
             'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse'
           }">
 
-        <img [src]="'./assets/img/' + project['img']" [alt]="project['name']">
+        <img [src]="'./assets/img/' + project.img" [alt]="project['name']">
 
         <div class="right-content" [ngStyle]="{
             'align-items': i % 2 === 0 ? 'start' : 'end'
@@ -27,19 +28,19 @@
             <div class="text-section" [ngStyle]="{
                 'align-items': i % 2 === 0 ? 'start' : 'end'
               }">
-                <h2>{{ project['name'] }}</h2>
-                <h3>{{ project['tech'] }}</h3>
-                <span [ngStyle]="{
-                    'text-align': i % 2 === 0 ? 'start' : 'end'
-                  }">{{ project['description'] }}</span>
+                <h2>{{ project.name }}</h2>
+                <h3>{{ project.tech }}</h3>
+                <span [ngStyle]="{'text-align': i % 2 === 0 ? 'start' : 'end'}">{{ project.description | translate }}</span>
 
             </div>
             <div class="btns">
-                <a href="{{ project['link'] }}" class="live">Live test</a>
-                <a href="{{ project['git'] }}" class="git">Github</a>
+                <a href="{{ project.link }}" class="live">Live test</a>
+                <a href="{{ project.git }}" class="git">Github</a>
             </div>
 
         </div>
     </div>
+    </div>
+
     <img class="shade right" src="./assets/img/shades/portright.png">
 </div>
