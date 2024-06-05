@@ -1,6 +1,8 @@
 @import './../styles.scss';
 
-
+.flow-hidden {
+    overflow-x: hidden;
+}
 
 app-header {
     width: 100vw;
@@ -14,14 +16,14 @@ app-header {
     display: none;
 }
 
-.burger_closed{
+.burger_closed {
     display: none;
-    
+
 }
 
 
 @media (max-width: 850px) {
-    .burger_open{
+    .burger_open {
         display: block;
         animation: dialogOpen 250ms forwards;
         width: 100vw;
@@ -33,37 +35,39 @@ app-header {
         left: 0;
         right: 0;
         bottom: 0;
-        
+
     }
-    
-    .burger_closed{
+
+    .burger_closed {
         animation: dialogClose 250ms forwards;
-        
+
     }
-    
+
     @keyframes dialogOpen {
-        from{
+        from {
             opacity: 0;
             z-index: 0;
         }
-        to{
+
+        to {
             opacity: 1;
             z-index: 99;
         }
     }
-    
-    
+
+
     @keyframes dialogClose {
-        from{
+        from {
             opacity: 1;
             z-index: 99;
             display: block;
         }
-        to{
+
+        to {
             opacity: 0;
             z-index: 0;
             display: none;
         }
-        
+
     }
 }
