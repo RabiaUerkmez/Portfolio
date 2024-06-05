@@ -9,7 +9,7 @@
     },
     "aboutMe": {
         "me": "About me",
-        "hello": "Hello and welcome to my website! I am a Front-end developer based in Heilbronn, Germany who loves solving problems and taking on new challenges. I am very happy that you found your way here.",
+        "hello": "Hello and welcome to my website! I am a Frontend developer based in Heilbronn, Germany who loves solving problems and taking on new challenges. I am very happy that you found your way here.",
         "bulb": "I really enjoy finding creative and effective solutions to design digital experiences. The diversity and dynamism of programming inspires me every day.",
         "puzzle": "I am disciplined and have a logical understanding, which helps me to deal with even more complex issues. Feel free to explore my projects to get a sense of what I've been working on."
     },
@@ -20,7 +20,7 @@
     },
     "portfolio": {
         "title": "Explore a selection of my work here - Interact with projects to see my skills in action.",
-        "Join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "loco": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
     },
     "contact": {

@@ -101,6 +101,7 @@ span {
     .btns {
         @include dFlex($g: 88px);
         text-wrap: nowrap;
+
         a {
             @include dFlex;
             text-decoration: none;
@@ -157,6 +158,10 @@ span {
         span {
             text-align: center !important;
         }
+
+        img {
+            padding-bottom: 48px !important;
+        }
     }
 
     .right {
@@ -207,7 +212,7 @@ span {
     .right-content {
         .btns {
             gap: 32px;
-            
+
         }
     }
 }
@@ -255,6 +260,16 @@ span {
 
     img {
         width: 300px;
+    }
+
+    .right-content {
+        .btns {
+            gap: 24px;
+
+            a {
+                padding: 10px 20px;
+            }
+        }
     }
 
 }

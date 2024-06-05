@@ -157,7 +157,7 @@ button {
 
 @media (max-height: 1200px) {
     .shadow-section {
-        top: 510px;
+        top: 460px;
     }
 }
 
@@ -193,6 +193,10 @@ button {
 
     .right-section {
         margin-left: 0;
+
+        a {
+            padding-left: 24px;
+        }
     }
 
     .img-section {

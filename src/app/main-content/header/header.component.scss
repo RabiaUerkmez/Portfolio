@@ -2,7 +2,6 @@
 
 
 nav {
-    height: 100px;
     @include dFlex($jc: space-between);
     padding: 37px 116px 37px 90px;
     position: sticky;
@@ -68,6 +67,9 @@ div {
     margin-top: -3px;
 }
 
+.desktop-display {
+    height: 40px;
+}
 
 .mobile-display {
 
@@ -100,31 +102,32 @@ div {
 }
 
 @media (max-width: 700px) {
+
     nav {
         padding: 37px 80px 37px 56px;
+
+        a {
+            img {
+                width: 80px !important;
+            }
+        }
+    }
+
+    .mobile-display {
+
+        a {
+            width: 21px !important;
+
+            img {
+                width: 20px !important;
+            }
+        }
     }
 }
 
 @media (max-width: 550px) {
     nav {
         padding: 37px 64px 37px 40px;
-
-        a {
-            img {
-                width: 140px;
-            }
-        }
-
-    }
-}
-
-@media (max-width: 350px) {
-    nav {
-        a {
-            img {
-                width: 124px;
-            }
-        }
 
     }
 }

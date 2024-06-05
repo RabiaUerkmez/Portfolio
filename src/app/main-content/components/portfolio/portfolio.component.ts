@@ -16,15 +16,15 @@ export class PortfolioComponent {
         {
             name: 'Join',
             tech: 'HTML | CSS | Javascript',
-            description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+            descriptionKey: 'portfolio.join',
             link: 'https://join.rabia-uerkmez.de/html/user-login/log-in.html',
-            github: 'https://github.com/RabiaUerkmez/Join',
+            git: 'https://github.com/RabiaUerkmez/Join',
             img: 'join.png',
         },
         {
             name: 'El Pollo Loco',
             tech: 'HTML | CSS | Javascript',
-            description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.',
+            descriptionKey: 'portfolio.loco',
             link: 'https://el-pollo-loco.rabia-uerkmez.de/',
             git: 'https://github.com/RabiaUerkmez/El-Pollo-Loco',
             img: 'loco.png',
