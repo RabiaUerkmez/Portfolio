@@ -25,7 +25,6 @@ export class ContactInfoComponent {
     checkbox: false,
   }
 
-  mailTest = true;
   messageSent = false;
 
 
@@ -41,27 +40,24 @@ export class ContactInfoComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
+            this.messageSent = true;
+            
+            setTimeout(() => {
+              this.messageSent = false;
+            }, 10000);
           },
           error: (error) => {
-            console.error(error);
+            console.error('Error submitting request: ', error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('Request send successfully'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-      console.log(this.contactData);
-      ngForm.resetForm();
-      this.messageSent = true;
     }
 
-    setTimeout(() => {
-      this.messageSent = false;
-    }, 10000);
+
   }
 }

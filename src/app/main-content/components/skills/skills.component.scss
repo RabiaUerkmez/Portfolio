@@ -1,5 +1,9 @@
 @import './../../../../styles.scss';
 
+.center-max-width {
+    padding-top: 120px;
+}
+
 .main-section {
     @include dFlex($jc: space-between, $g: 54px);
     padding: 37px 0 37px 100px;
