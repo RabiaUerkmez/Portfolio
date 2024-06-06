@@ -1,13 +1,23 @@
 @import './../../../styles.scss';
 
+header {
+    @include dFlex;
+    background-color: #141d2f;
+    max-height: 32px;
+    height: 100%;
+    padding: 40px 80px;
+    width: 100vw;
+    max-width: calc(100vw - 160px);
+    position: fixed;
+    left: 0;
+    z-index: 99;
+}
 
 nav {
     @include dFlex($jc: space-between);
-    padding: 37px 116px 37px 90px;
-    position: sticky;
-    top: 0;
     background-color: #141d2f;
-    z-index: 99;
+    width: 100%;
+    max-width: 1920px;
 
     a {
         @include dFlex;
@@ -83,9 +93,6 @@ div {
 
 
 @media (max-width: 850px) {
-    nav {
-        padding: 37px 88px 37px 64px;
-    }
 
     .desktop-display {
         display: none !important;
@@ -103,9 +110,12 @@ div {
 
 @media (max-width: 700px) {
 
-    nav {
-        padding: 37px 80px 37px 56px;
+    header {
+        padding: 32px 72px;
+        max-width: calc(100vw - 148px);
+    }
 
+    nav {
         a {
             img {
                 width: 80px !important;
@@ -126,8 +136,8 @@ div {
 }
 
 @media (max-width: 550px) {
-    nav {
-        padding: 37px 64px 37px 40px;
-
+    header {
+        padding: 32px 40px;
+        max-width: calc(100vw - 80px);
     }
 }

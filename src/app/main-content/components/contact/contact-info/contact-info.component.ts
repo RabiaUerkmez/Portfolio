@@ -30,7 +30,7 @@ export class ContactInfoComponent {
 
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://rabia-uerkmez.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

@@ -1,35 +1,37 @@
-<nav>
-    <a href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
-    <div class="mobile-display">
-        <a (click)="handleClick($event)"><img src="./../../assets/img/icons/burger.png" alt="Menu"></a>
-    </div>
-    <div class="desktop-display">
-
-        <section>
-            <a href="#bout-me" (click)="setAboutMeOpen()" [ngClass]="{'orange': aboutMeOpen}">{{ "aboutMe.me" | translate }}</a>
-            <div *ngIf="aboutMeOpen" [ngClass]="{'smallUnderline':aboutMeOpen}"></div>
-        </section>
-
-        <section>
-            <a href="#skills" (click)="setSkillsOpen()" [ngClass]="{'orange': skillsOpen}">Skills</a>
-            <div *ngIf="skillsOpen" [ngClass]="{'smallUnderline':skillsOpen}"></div>
-        </section>
-
-        <section>
-            <a href="#portfolio" (click)="setPortfolioOpen()" [ngClass]="{'orange': portfolioOpen}">Portfolio</a>
-            <div *ngIf="portfolioOpen" [ngClass]="{'smallUnderline':portfolioOpen}"></div>
-        </section>
-
-        <section class="language-btn">
-            <div class="style-underline">
-                <a (click)="changeLanguage('en')" [ngClass]="{'orange': languageService.english}">EN</a>
-                <div *ngIf="languageService.english" class="smallUnderline"></div>
-            </div>
-            <p>|</p>
-            <div class="style-underline">
-                <a (click)="changeLanguage('de')" [ngClass]="{'orange': languageService.german}">DE</a>
-            <div *ngIf="languageService.german" class="smallUnderline"></div>
-            </div>
-        </section>
-    </div>
-</nav>
+<header>
+    <nav>
+        <a href="#"><img src="./assets/img/logo.png" alt="Logo"></a>
+        <div class="mobile-display">
+            <a (click)="handleClick($event)"><img src="./../../assets/img/icons/burger.png" alt="Menu"></a>
+        </div>
+        <div class="desktop-display">
+    
+            <section>
+                <a href="#bout-me" (click)="setAboutMeOpen()" [ngClass]="{'orange': aboutMeOpen}">{{ "aboutMe.me" | translate }}</a>
+                <div *ngIf="aboutMeOpen" [ngClass]="{'smallUnderline':aboutMeOpen}"></div>
+            </section>
+    
+            <section>
+                <a href="#skills" (click)="setSkillsOpen()" [ngClass]="{'orange': skillsOpen}">Skills</a>
+                <div *ngIf="skillsOpen" [ngClass]="{'smallUnderline':skillsOpen}"></div>
+            </section>
+    
+            <section>
+                <a href="#portfolio" (click)="setPortfolioOpen()" [ngClass]="{'orange': portfolioOpen}">Portfolio</a>
+                <div *ngIf="portfolioOpen" [ngClass]="{'smallUnderline':portfolioOpen}"></div>
+            </section>
+    
+            <section class="language-btn">
+                <div class="style-underline">
+                    <a (click)="changeLanguage('en')" [ngClass]="{'orange': languageService.english}">EN</a>
+                    <div *ngIf="languageService.english" class="smallUnderline"></div>
+                </div>
+                <p>|</p>
+                <div class="style-underline">
+                    <a (click)="changeLanguage('de')" [ngClass]="{'orange': languageService.german}">DE</a>
+                <div *ngIf="languageService.german" class="smallUnderline"></div>
+                </div>
+            </section>
+        </div>
+    </nav>
+</header>

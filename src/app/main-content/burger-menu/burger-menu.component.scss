@@ -14,11 +14,15 @@
 
     nav {
         @include dFlex($jc: space-between);
-        padding: 37px 116px 37px 90px;
-        position: sticky;
-        top: 0;
         background-color: #141d2f;
         z-index: 99;
+        max-height: 32px;
+        height: 100%;
+        padding: 40px 80px;
+        width: 100vw;
+        max-width: calc(100vw - 160px);
+        position: fixed;
+        z-index: 10;
 
         a {
             @include dFlex;
@@ -43,7 +47,7 @@
     #mobile-burger {
         @include dFlex($g: 40px);
         flex-direction: column;
-        padding-top: 40px;
+        padding-top: 160px;
         height: 50vh;
         z-index: 9;
         font-size: 23px;
@@ -100,19 +104,11 @@
 }
 
 
-@media (max-width: 850px) {
-    .bg {
-        nav {
-            padding: 37px 88px 37px 64px;
-        }
-    }
-
-}
-
 @media (max-width: 700px) {
     .bg {
         nav {
-            padding: 37px 80px 37px 56px;
+            padding: 32px 72px;
+            max-width: calc(100vw - 148px);
 
             a {
                 img {
@@ -132,10 +128,10 @@
 }
 
 @media (max-width: 550px) {
-    nav {
-        padding: 37px 64px 37px 40px !important;
-
-
-
+    .bg {
+        nav {
+            padding: 32px 40px;
+            max-width: calc(100vw - 80px);
+        }
     }
 }
