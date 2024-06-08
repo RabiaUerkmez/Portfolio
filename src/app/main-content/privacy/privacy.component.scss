@@ -50,16 +50,25 @@
 
 @media (max-width: 650px) {
     .main-content {
-    
+
         h1 {
             font-size: 40px;
+        }
+
+        .fix-btn {
+            a {
+                img {
+                    width: 32px;
+
+                }
+            }
         }
     }
 }
 
 @media (max-width: 550px) {
     .main-content {
-    
+
         h1 {
             font-size: 38px;
         }
@@ -68,19 +77,19 @@
 
 @media (max-width: 450px) {
     .main-content {
-    
+
         h1 {
             font-size: 32px;
         }
-    
+
         h2 {
             font-size: 24px;
         }
-    
+
         h3 {
             font-size: 24px;
         }
-    
+
         h4 {
             font-size: 20px;
         }
@@ -89,19 +98,19 @@
 
 @media (max-width: 380px) {
     .main-content {
-    
+
         h1 {
             font-size: 24px;
         }
-    
+
         h2 {
             font-size: 18px;
         }
-    
+
         h3 {
             font-size: 18px;
         }
-    
+
         h4 {
             font-size: 16px;
         }
