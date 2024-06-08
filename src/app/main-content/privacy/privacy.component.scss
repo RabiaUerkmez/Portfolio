@@ -3,6 +3,7 @@
 .main-content {
     padding: 160px 100px;
     max-width: 1440px;
+    word-break: break-word;
 
     .fix-btn {
         @include dFlex($jc: space-between);
@@ -49,8 +50,9 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .main-content {
+        padding: 160px 80px;
 
         h1 {
             font-size: 40px;
@@ -69,6 +71,7 @@
 
 @media (max-width: 550px) {
     .main-content {
+        padding: 144px 56px;
 
         h1 {
             font-size: 38px;
@@ -78,6 +81,7 @@
 
 @media (max-width: 450px) {
     .main-content {
+        padding: 128px 40px;
 
         h1 {
             font-size: 32px;
@@ -99,6 +103,7 @@
 
 @media (max-width: 380px) {
     .main-content {
+        padding: 128px 24px;
 
         h1 {
             font-size: 24px;
