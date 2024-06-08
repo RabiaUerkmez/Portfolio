@@ -56,6 +56,7 @@ div {
     @include dFlex($g: 35px);
     flex-direction: column;
     margin-left: -8%;
+    z-index: 9;
 }
 
 button {

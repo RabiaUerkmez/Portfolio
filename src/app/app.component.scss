@@ -24,6 +24,7 @@ app-header {
 .rotate {
     display: none;
     height: 100vh;
+    overflow: hidden;
 
     h2 {
         @include dFlex;
@@ -57,7 +58,6 @@ app-header {
         animation: dialogOpen 250ms forwards;
         width: 100vw;
         height: 100vh;
-        background-color: rgba(20, 29, 47, 0.663);
         z-index: 999;
         position: absolute;
         top: 0;

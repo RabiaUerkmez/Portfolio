@@ -5,16 +5,17 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { HttpClientModule } from '@angular/common/http';
 import { LanguageServiceService } from '../../../../languageData.service';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-info',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule, HttpClientModule],
+  imports: [FormsModule, CommonModule, TranslateModule, HttpClientModule, RouterLink],
   templateUrl: './contact-info.component.html',
   styleUrls: ['./contact-info.component.scss', './contact-info-pyro.component.scss']
 })
 export class ContactInfoComponent {
-  constructor(public translateService: TranslateService, public languageService: LanguageServiceService) { }
+  constructor(public translateService: TranslateService, public languageService: LanguageServiceService, private router: Router) { }
 
   http = inject(HttpClient)
 
@@ -49,15 +50,21 @@ export class ContactInfoComponent {
             
             setTimeout(() => {
               this.messageSent = false;
-            }, 10000);
+            }, 5000);
           },
           error: (error) => {
             console.error('Error submitting request: ', error);
           },
-          complete: () => console.info('Request send successfully'),
+          complete: () => console.info('Request sent successfully'),
         });
     }
 
 
+  }
+
+  scrollToPrivacysTop() {
+    this.router.navigateByUrl('/privacy').then(() => {
+      window.scrollTo(0, 0); 
+    });
   }
 }

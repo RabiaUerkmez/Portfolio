@@ -1,7 +1,7 @@
 @import './../../../styles.scss';
 
 .main-content {
-    padding: 100px;
+    padding: 160px 100px;
 
     .fix-btn {
         @include dFlex($jc: space-between);

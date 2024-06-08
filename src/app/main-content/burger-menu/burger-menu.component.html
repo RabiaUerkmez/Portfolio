@@ -7,10 +7,10 @@
             </div>
         </nav>
         <div id="mobile-burger">
-            <a href="#bout-me" class="hover">{{ "aboutMe.me" | translate }}</a>
-            <a href="#skills" class="hover">Skills</a>
-            <a href="#portfolio" class="hover">Portfolio</a>
-            <a href="#contact" class="hover">Contact</a>
+            <a href="#bout-me" (click)="closeBurger()" class="hover">{{ "aboutMe.me" | translate }}</a>
+            <a href="#skills" (click)="closeBurger()" class="hover">Skills</a>
+            <a href="#portfolio" (click)="closeBurger()" class="hover">Portfolio</a>
+            <a href="#contact" (click)="closeBurger()" class="hover">Contact</a>
             <div>
                 <a (click)="changeLanguage('en')" [ngClass]="{'orange': languageService.english}">EN</a>
                 <p>|</p>

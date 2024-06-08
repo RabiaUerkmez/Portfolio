@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, inject } from '@angular/core';
+import { Component, EventEmitter, Output, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageServiceService } from '../../languageData.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
@@ -9,41 +9,50 @@ import { HttpClientModule } from '@angular/common/http';
   standalone: true,
   imports: [CommonModule, TranslateModule, HttpClientModule],
   templateUrl: './burger-menu.component.html',
-  styleUrl: './burger-menu.component.scss'
+  styleUrls: ['./burger-menu.component.scss']
 })
 export class BurgerMenuComponent {
   @Output() burgerMenuClosed: EventEmitter<boolean> = new EventEmitter();
-  langBoolean = inject(LanguageServiceService);
 
-  constructor(public translateService: TranslateService, public languageService: LanguageServiceService) { }
-  
-  aboutMeOpen = false;
-  skillsOpen = false;
-  portfolioOpen = false;
+  public aboutMeOpen = false;
+  public skillsOpen = false;
+  public portfolioOpen = false;
 
-  changeLanguage(langCode: string) {
-    this.langBoolean.changeLanguageService(langCode);
-    }
+  constructor(public translateService: TranslateService, public languageService: LanguageServiceService) {}
 
-  closeBurger() {
-    this.burgerMenuClosed.emit(false);
+  changeLanguage(langCode: string): void {
+    this.languageService.changeLanguageService(langCode);
   }
 
-  setAboutMeOpen() {
+  closeBurger(): void {
+    this.burgerMenuClosed.emit(false);
+    document.body.style.overflow = 'auto';
+  }
+
+  setAboutMeOpen(): void {
     this.aboutMeOpen = true;
     this.skillsOpen = false;
     this.portfolioOpen = false;
   }
 
-  setSkillsOpen() {
+  setSkillsOpen(): void {
     this.aboutMeOpen = false;
     this.skillsOpen = true;
     this.portfolioOpen = false;
   }
 
-  setPortfolioOpen() {
+  setPortfolioOpen(): void {
     this.aboutMeOpen = false;
     this.skillsOpen = false;
     this.portfolioOpen = true;
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    const header = document.querySelector('.bg') as HTMLElement;
+    const offset = window.scrollY;
+    if (header) {
+      header.style.top = `${offset}px`;
+    }
   }
 }

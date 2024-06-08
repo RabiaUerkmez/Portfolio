@@ -25,12 +25,13 @@ export class HeaderComponent {
 
   openMenu() {
     this.openMenuChange.emit(true);
+    document.body.style.overflow = 'hidden';
   }
 
   handleClick(event: MouseEvent) {
     event.preventDefault(); // Verhindert das Standardverhalten des Links
     this.openMenu();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   setAboutMeOpen() {

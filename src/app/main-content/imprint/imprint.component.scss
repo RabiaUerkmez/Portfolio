@@ -11,7 +11,7 @@ h2 {
 .fix-btn {
     @include dFlex($ai: end);
     flex-direction: column;
-    padding: 100px;
+    padding: 160px 100px;
     a {
         img {
             rotate: 270deg;
