@@ -15,7 +15,7 @@ export class PortfolioComponent {
     projects = [
         {
             name: 'Join',
-            tech: 'HTML | CSS | Javascript',
+            tech: 'HTML | CSS | JavaScript',
             descriptionKey: 'portfolio.join',
             link: 'https://join.rabia-uerkmez.de/html/user-login/log-in.html',
             git: 'https://github.com/RabiaUerkmez/Join',
@@ -23,7 +23,7 @@ export class PortfolioComponent {
         },
         {
             name: 'El Pollo Loco',
-            tech: 'HTML | CSS | Javascript',
+            tech: 'HTML | CSS | JavaScript',
             descriptionKey: 'portfolio.loco',
             link: 'https://el-pollo-loco.rabia-uerkmez.de/',
             git: 'https://github.com/RabiaUerkmez/El-Pollo-Loco',

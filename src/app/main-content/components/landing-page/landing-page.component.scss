@@ -133,11 +133,13 @@ button {
     }
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1600px) {
     .right-section {
         margin-left: -16%;
     }
+}
 
+@media (max-width: 1560px) {
     .img-section {
         margin-left: -16%;
     }
@@ -210,6 +212,7 @@ button {
 
     .shadow-section {
         top: 320px;
+
         .display {
             display: none;
         }
@@ -240,6 +243,7 @@ button {
     .img-section {
         height: 560px;
     }
+
     .shadow-section {
         top: 240px;
     }
@@ -318,5 +322,5 @@ button {
     .shadow-section {
         top: 100px !important;
     }
-    
+
 }

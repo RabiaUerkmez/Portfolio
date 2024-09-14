@@ -1,7 +1,7 @@
 {
     "landing": {
         "iAm": "Ich bin",
-        "title": "SOFTWARE ENTWICKLER",
+        "title": "SOFTWARE ENTWICKLERIN",
         "talk": "Lass uns reden!"
     },
     "scroll": {
@@ -9,7 +9,7 @@
     },
     "aboutMe": {
         "me": "Über mich",
-        "hello": "Hallo und herzlich willkommen auf meiner Webseite! Ich bin eine Software-Entwicklerin aus Heilbronn, die es liebt, Probleme zu lösen und sich neuen Herausforderungen zu stellen. Ich freue mich sehr, dass Sie den Weg hierher gefunden haben.",
+        "hello": "Hallo und herzlich Willkommen auf meiner Webseite! Ich bin eine Software-Entwicklerin aus Heilbronn, die es liebt, Probleme zu lösen und sich neuen Herausforderungen zu stellen. Ich freue mich sehr, dass Sie den Weg hierher gefunden haben.",
         "bulb": "Es macht mir großen Spaß, kreative und effektive Lösungen für die Gestaltung digitaler Erlebnisse zu finden. Die Vielfalt und Dynamik der Programmierung inspiriert mich jeden Tag aufs Neue.",
         "puzzle": "Ich bin diszipliniert und verfüge über ein logisches Verständnis, das mir hilft, auch mit komplexeren Problemen umzugehen. Sehen Sie sich gerne meine Projekte an, um einen Eindruck davon zu bekommen, woran ich gearbeitet habe."
     },
@@ -26,7 +26,7 @@
     "contact": {
         "title": "Kontakt",
         "solve": "Sie haben ein Problem, welches gelöst werden sollte?",
-        "contactMe": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "contactMe": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
         "need": "Sie brauchen einen Software Entwickler?",
         "me": " Kontaktieren sie mich!",
         "placeholderName": "Ihr Name",
