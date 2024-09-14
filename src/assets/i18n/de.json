@@ -21,7 +21,8 @@
     "portfolio": {
         "title": "Entdecken Sie hier eine Auswahl meiner Arbeiten - interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
         "join": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag & Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
-        "loco": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen."
+        "loco": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen.",
+        "dabubble": "Chat-Messenger inspiriert von Slack. Vernetzen Sie sich mit Ihren Kollegen und tauschen Sie Ideen mit ihnen aus. Sie können Nachrichten posten, Kanäle erstellen und auf andere Nachrichten antworten oder reagieren."
     },
     "contact": {
         "title": "Kontakt",

@@ -21,7 +21,8 @@
     "portfolio": {
         "title": "Explore a selection of my work here - Interact with projects to see my skills in action.",
         "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-        "loco": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken."
+        "loco": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.",
+        "dabubble": "Chat messenger inspired by Slack. Connect and share ideas with your colleagues. You can post messages, create channels, and reply or react to other messages."
     },
     "contact": {
         "title": "Contact",
