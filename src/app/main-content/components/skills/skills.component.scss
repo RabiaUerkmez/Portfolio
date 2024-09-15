@@ -132,6 +132,7 @@ button {
     &:hover {
         cursor: pointer;
         background-color: $pink;
+        transition: 125ms ease-in-out;
     }
 }
 

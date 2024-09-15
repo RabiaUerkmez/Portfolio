@@ -29,7 +29,7 @@ export class PortfolioComponent {
             tech: 'HTML | SCSS | Angular | Typescript | Firebase',
             descriptionKey: 'portfolio.dabubble',
             link: 'https://dabubble.rabia-uerkmez.de/',
-            git: 'https://github.com/RabiaUerkmez/Join',
+            git: 'https://github.com/RabiaUerkmez/dabubble',
             img: 'dabubble.png',
         },
         {

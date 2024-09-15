@@ -72,11 +72,13 @@ button {
     z-index: 8;
     transition: transform 75ms ease-in-out;
     animation: comesFromBottom 1s ease 75ms;
+    transition: 125ms ease-in-out;
 
     &:hover {
         cursor: pointer;
         background-color: $pink;
         transform: scale(1.1);
+        transition: 125ms ease-in-out;
     }
 }
 

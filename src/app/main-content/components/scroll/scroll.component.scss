@@ -44,6 +44,7 @@
         &:hover {
             cursor: pointer;
             transform: scale(1.5);
+            transition: 125ms ease-in-out;
         }
     }
 }
